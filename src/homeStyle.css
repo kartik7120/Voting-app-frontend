@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@1,200&display=swap");
+
+.homeBody {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.homeImg {
+  width: 100%;
+  display: block;
+}
+
+.flex-box-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-box-home > h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 4.5em;
+  color: #48cae4;
+  margin: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  /* display: block; */
+}
+
+.flex-box-home > p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: block;
+  font-size: 3em;
+  font-weight: 600;
+  margin-top: 0;
+  color: #7209b7;
+}
+
+.getStartedButton {
+  align-self: center;
+  display: block;
+}
+
+.upperText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: x-small;
+  min-width: 40%;
+  width: 60%;
+  margin: 0.8%;
+}
+
+.upperFlexBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+.PollStates {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.pollDetails {
+  font-size: 40%;
+  margin: 1em;
+}
+
+@media screen and (max-width: 1048px) {
+  .upperFlexBox {
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+  }
+  .homeBody {
+    width: 100%;
+    /* min-width: 50%; */
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .PollStates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

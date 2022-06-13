@@ -1,0 +1,25 @@
+.profileFlexBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.upperProfilePart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.LowerProfilePart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  min-width: 50%;
+}
+.profileFlexBox div {
+  margin: 1em;
+}

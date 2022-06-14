@@ -91,7 +91,7 @@ function Home(props) {
               </Typography>
             </div>
             <div className="homeBody">
-              <img src="/images/vote4.jpg" className="homeImg" alt="" />
+              <img src="https://voting-app-70.herokuapp.com/images/vote4.jpg" className="homeImg" alt="" />
             </div>
           </div>
           <Divider variant="middle" component="hr" />

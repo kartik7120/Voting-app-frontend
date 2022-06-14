@@ -87,7 +87,7 @@ function Poll(props) {
         },
         body: JSON.stringify(body),
       };
-      fetch("/poll/create", fetchConfig)
+      fetch("https://voting-app-70.herokuapp.com/poll/create", fetchConfig)
         .then((jsonData) => {
           if (jsonData.status === 404) {
             setAlertState(function (oldState) {

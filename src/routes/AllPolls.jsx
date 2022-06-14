@@ -20,7 +20,7 @@ function AllPolls(props) {
 
   React.useEffect(
     function () {
-      fetch(`/poll/allPolls/page/${paginationState}`)
+      fetch(`https://voting-app-70.herokuapp.com/poll/allPolls/page/${paginationState}`)
         .then((jsonData) => jsonData.json())
         .then((data) => {
           const body = data;

@@ -57,7 +57,7 @@ function Profile(props) {
             "o-auth-token": localStorage.getItem("userToken"),
           },
         };
-        fetch(`/users/user`, fetchConfig)
+        fetch(`https://voting-app-70.herokuapp.com/users/user`, fetchConfig)
           .then((jsonData) => {
             if (jsonData.status === 404) navigate("../Signin");
             return jsonData.json();

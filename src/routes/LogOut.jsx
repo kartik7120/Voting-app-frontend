@@ -16,7 +16,7 @@ function LogOut(props) {
         Accept: "*/*",
       },
     };
-    fetch("/users/logout", fetchConfig)
+    fetch("https://voting-app-70.herokuapp.com/users/logout", fetchConfig)
       .then((jsonData) => jsonData.json())
       .then((data) => {
         if (localStorage.getItem("userToken")) {

@@ -56,7 +56,7 @@ export default function Login() {
       body: JSON.stringify(body),
     };
 
-    fetch("/users/register", fetchConfig)
+    fetch("https://voting-app-70.herokuapp.com/users/register", fetchConfig)
       .then((Jsondata) => Jsondata.json())
       .then((data) => {
         localStorage.setItem("userToken", data.token);

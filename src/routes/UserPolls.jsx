@@ -16,7 +16,7 @@ function UserPolls(props) {
   React.useEffect(
     function () {
       if (signInState.isAuthenticated !== false) {
-        fetch(`/users/${signInState._id}`)
+        fetch(`https://voting-app-70.herokuapp.com/users/${signInState._id}`)
           .then((jsonData) => jsonData.json())
           .then((data) => {
             console.log("Data recieved from the /users/:id", data);

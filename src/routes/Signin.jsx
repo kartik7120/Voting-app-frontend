@@ -60,7 +60,7 @@ export default function SignIn() {
       body: JSON.stringify(body),
     };
 
-    fetch("/users/login", fetchConfig)
+    fetch("https://voting-app-70.herokuapp.com/users/login", fetchConfig)
       .then((jsonData) => {
         return jsonData.json();
       })

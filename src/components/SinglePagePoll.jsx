@@ -22,7 +22,7 @@ function SinglePagePoll(props) {
           Accept: "*/*",
         },
       };
-      fetch(`/poll/allPolls/${id}`, fetchConfig)
+      fetch(`https://voting-app-70.herokuapp.com/poll/allPolls/${id}`, fetchConfig)
         .then((jsonData) => jsonData.json())
         .then((data) => {
           const pollData = JSON.parse(data);
@@ -55,7 +55,7 @@ function SinglePagePoll(props) {
         },
         body: JSON.stringify(state),
       };
-      fetch(`/poll/updateVotes/${state._id}`, fetchConfig)
+      fetch(`https://voting-app-70.herokuapp.com/poll/updateVotes/${state._id}`, fetchConfig)
         .then((jsonData) => {
           if (jsonData.status === 404) {
             setAlertState(function (oldState) {

@@ -22,7 +22,7 @@ function Home(props) {
   let alertState = signInObject.alertState;
   // const setAlertState = signInObject.setAlertState;
   React.useEffect(function () {
-    fetch("poll/allPolls/details")
+    fetch("https://voting-app-70.herokuapp.com/poll/allPolls/details")
       .then((jsonData) => jsonData.json())
       .then((data) => setState(data))
       .catch((error) =>

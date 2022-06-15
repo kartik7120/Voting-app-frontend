@@ -29,7 +29,7 @@ function SocialMediaShareButtons(props) {
       <CardContent style={{ display: "flex", justifyContent: "space-evenly" }}>
         <motion.div whileHover={{ scale: 1.2 }}>
           <RedditShareButton
-            url="http://localhost:3000/poll/6290601894c72cbd8787af53"
+            url="https://prod1--beamish-figolla-d4c658.netlify.app/poll/6290601894c72cbd8787af53"
             children={<div></div>}
             openShareDialogOnClick
             title={props.state.title}
@@ -39,7 +39,7 @@ function SocialMediaShareButtons(props) {
         </motion.div>
         <motion.div whileHover={{ scale: 1.2 }}>
           <FacebookShareButton
-            url="http://localhost:3000/poll/6290601894c72cbd8787af53"
+            url="https://prod1--beamish-figolla-d4c658.netlify.app/poll/6290601894c72cbd8787af53"
             children={<div></div>}
             openShareDialogOnClick
             hashtag="Poll"
@@ -49,7 +49,7 @@ function SocialMediaShareButtons(props) {
         </motion.div>
         <motion.div whileHover={{ scale: 1.2 }}>
           <WhatsappShareButton
-            url="http://localhost:3000/poll/6290601894c72cbd8787af53"
+            url="https://prod1--beamish-figolla-d4c658.netlify.app/poll/6290601894c72cbd8787af53"
             children={<div></div>}
             openShareDialogOnClick
             title={props.state.title}
@@ -59,7 +59,7 @@ function SocialMediaShareButtons(props) {
         </motion.div>
         <motion.div whileHover={{ scale: 1.2 }}>
           <TwitterShareButton
-            url="http://localhost:3000/poll/6290601894c72cbd8787af53"
+            url="https://prod1--beamish-figolla-d4c658.netlify.app/poll/6290601894c72cbd8787af53"
             children={<div></div>}
             openShareDialogOnClick
             title={props.state.title}
@@ -69,11 +69,11 @@ function SocialMediaShareButtons(props) {
         </motion.div>
         <motion.div whileHover={{ scale: 1.2 }}>
           <EmailShareButton
-            url="http://localhost:3000/poll/6290601894c72cbd8787af53"
+            url="https://prod1--beamish-figolla-d4c658.netlify.app/poll/6290601894c72cbd8787af53"
             children={<div></div>}
             openShareDialogOnClick
             subject={props.state.title}
-            body="http://localhost:3000/poll/6290601894c72cbd8787af53"
+            body="https://prod1--beamish-figolla-d4c658.netlify.app/poll/6290601894c72cbd8787af53"
           >
             <EmailIcon round={true}></EmailIcon>
           </EmailShareButton>
